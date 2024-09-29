@@ -11,7 +11,6 @@
     "type-check": "vue-tsc --build --force",
     "lint:stylelint": "stylelint  \"**/*.{css,scss,less,vue,html}\" --fix",
     "prepare": "husky install",
-    "lint:lint-staged": "lint-staged",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
