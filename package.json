@@ -1,18 +1,20 @@
 {
-  "name": "vue-bs-temp",
+  "name": "ll",
   "type": "module",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0",
+    "pnpm": ">=7.33.7"
+  },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
-    "lint:stylelint": "stylelint  \"**/*.{css,scss,less,vue,html}\" --fix",
-    "prepare": "husky install",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:stylelint": "stylelint  \"**/*.{css,scss,less,vue,html}\" --fix"
   },
   "dependencies": {
     "pinia": "^2.1.7",
@@ -21,17 +23,14 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.7.3",
-    "@commitlint/cli": "^19.5.0",
-    "@commitlint/config-conventional": "^19.5.0",
     "@tsconfig/node20": "^20.1.4",
-    "@types/node": "^20.14.5",
+    "@types/node": "^20.16.10",
     "@unocss/eslint-plugin": "^0.62.4",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vitejs/plugin-vue-jsx": "^4.0.0",
     "@vue/tsconfig": "^0.5.1",
     "eslint": "^9.11.1",
     "eslint-plugin-format": "^0.1.2",
-    "husky": "^8.0.0",
     "less": "^4.2.0",
     "npm-run-all2": "^6.2.0",
     "postcss": "^8.4.47",
