@@ -5,6 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
+    <div class="gg" />
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125">
 
     <div class="wrapper">
@@ -25,6 +26,12 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <style scoped>
+.gg {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255 222 255 / 20%);
+}
+
 header {
   max-height: 100vh;
   line-height: 1.5;

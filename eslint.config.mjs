@@ -2,7 +2,7 @@ import antfu from '@antfu/eslint-config'
 
 export default antfu({
   // @stylistic/eslint-plugin-plus
-  stylistic: true,
+  // stylistic: true,
   // eslint-plugin-format
   formatters: true,
   // unocss 检测&格式化 暂时注释 等配置了unocss再开放为true
